@@ -118,6 +118,12 @@ nav a:focus {
     outline-offset: 2px;
 }
 
+nav a.active {
+    color: var(--valentine-red);
+    background: rgba(255, 175, 204, 0.3);
+    font-weight: 600;
+}
+
 /* ===================================
    Main Content Area
    =================================== */
@@ -337,6 +343,62 @@ p {
 
 .dove:nth-child(3) {
     animation-delay: 1s;
+}
+
+/* ===================================
+   Page Navigation Buttons
+   =================================== */
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+    flex-wrap: wrap;
+}
+
+.page-navigation a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: var(--vanilla);
+    background: var(--love-purple);
+    text-decoration: none;
+    padding: var(--space-3) var(--space-4);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+.page-navigation a:hover,
+.page-navigation a:focus {
+    background: var(--valentine-red);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 77, 109, 0.4);
+}
+
+.page-navigation a:focus {
+    outline: 3px solid var(--valentine-red);
+    outline-offset: 3px;
+}
+
+.prev-page {
+    background: var(--cupid-pink) !important;
+    color: var(--chocolate) !important;
+}
+
+.prev-page:hover {
+    background: var(--love-purple) !important;
+    color: var(--vanilla) !important;
+}
+
+.home-page {
+    background: var(--chocolate) !important;
+    color: var(--vanilla) !important;
+}
+
+.home-page:hover {
+    background: var(--valentine-red) !important;
 }
 
 /* ===================================
